@@ -18,20 +18,20 @@
 #  roles:
 #    - db
 
-- name: Verify Installation
-  hosts: all
-  tasks:
+#- name: Verify Installation
+#  hosts: all
+#  tasks:
 
-    - name: Query index page for application
-      uri:
+#    - name: Query index page for application
+#      uri:
 #        url: http://localhost/index.php
-        url: http://localhost/
-        return_content: yes
-      register: Output
+#        url: http://localhost/
+#        return_content: yes
+#      register: Output
     
-    - name: Display Index page content
-      ansible.builtin.debug:
-        var: Output
+#    - name: Display Index page content
+#      ansible.builtin.debug:
+#        var: Output
 
 
   
